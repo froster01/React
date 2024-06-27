@@ -1,118 +1,65 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
+    <View style={styles.container}>
+      <Text style={styles.boldLetter}>Hi welcome aiman!</Text>
+      <Text style={styles.normalLetter}>
+        5 - Please refer to official react native about alert
+        https://reactnative.dev/docs/alert
       </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
+      <Text style={styles.normalLetter}>
+        6 - Understand the alert carefully and create me an alert with dialog
+        box of....
       </Text>
+      <Text style={styles.normalLetter}>
+        title (Your name), description (the way you greet and meet new people.
+        eg; hi my name is... would you like to be my friend?), and 2 button of
+        yes and no
+      </Text>
+      <Text style={styles.normalLetter}>
+        7 - You should clean your app.tsx and try to create from the scratch.
+        you should see a blank white screen. (i mean by scratch is using React
+        Native Functional Export Component With Styles)
+      </Text>
+      <Text style={styles.normalLetter}>
+        8 - please refer back to task1.txt
+      </Text>
+      <View style={styles.container2}>
+        <Text style={styles.boldLetter}>GOODLUCK! :D</Text>
+      </View>
     </View>
   );
-}
-
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+};
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 10,
+  },
+  container2: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: 20,
+  },
+  boldLetter: {
+    fontWeight: 'bold',
+    fontSize: 36,
+    marginBottom: 20,
+  },
+  normalLetter: {
+    fontWeight: 'normal',
+    fontSize: 20,
+  },
+  centerLetter: {
+    display: 'flex',
+    fontWeight: 'normal',
+    fontSize: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

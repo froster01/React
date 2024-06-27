@@ -1,0 +1,19 @@
+WELCOME TO TASK 1
+
+1 - make this project using src project structure folder
+2 - place the app.tsx inside of the src folder
+3 - do not forget to modified the index.js where app location is {keyword ---- import App from './App';}
+4 - run the app and you should see the next task inside the screen
+
+
+{number 5 and onwards are in app.tsx}
+
+
+9 - if you do see the blank white screen, please refer to number 7 and you may start working on number 6.
+
+10 - this task deadline is on 30th June 11:59PM
+
+11 - you may refer to github commits 
+
+
+GOODLUCK AIMAN!
