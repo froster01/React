@@ -1,0 +1,54 @@
+WELCOME TO TASK 2 (YOU WILL LEARN HOW TO USE PROFESSIONAL PROJECT STRUCTURED FOLDER, IN OTHER WORDS -> HAMBURGER, NAVIGATION SCREEN, REUSABLE AND WRITE REACT CODE USING TYPESCRIPT)
+PLEASE READ THIS FILE UNTIL FINISH BEFORE YOU START WORKING ON FROM POINT 1.
+
+
+
+
+
+
+
+
+
+1 - create a screen AND navigator folder inside src folder
+2 - make sure each function that you write, it needs to be a camelCase except for parent function (eg parent function; const App() ..... const ScreenOne() ..... ) 
+
+
+3 - make sure the file name is written as BigCase letter =>>>>>> eg; ScreenOne .... ScreenTwo
+4 - make sure the folder name is written as small-case letter, but if your folder contain two words (eg; imageapi), then it needs to be a camelCase as well
+
+
+5 - after you create a new file, you need to create an empty hamburger inside screenone and screentwo
+6 - create a new file of homepage and aboutme in screen folder. create a new file stacknavigatorroot in navigator folder. Filename is .tsx
+
+
+// Side notes
+7 - .tsx VS .ts .... point below
+7.1 - tsx is for a file where it consist of return View that renders on phone screen
+7.2 - ts is for a file where it consist of declaration module OR types OR middleware file OR etc...
+// End of side notes
+
+
+8 - please copy whole code of App.tsx and paste it into backup.bak
+8.1 - please read again your backup.bak, i have made some clearer explanation in the comment line
+8.2 - please refer to github as well if you prefer to look what i did in the latest commit
+
+
+9 - create from a scratch again of App.tsx and make sure when u run the app, you will see the result should be look like in the 1.png. please find the 1.png file in the image folder
+
+
+10 - Ok, so after you finish your number 8, you need to call stacknavigatorroot file and use it inside App.tsx (eg; like calling a component)
+11 - Then inside stacknavigatorroot, you need to learn the Official React Docs, refer to the link i've provided  ... https://reactnavigation.org/docs/stack-navigator
+12 - Please learn how to use stack navigator until API Definition (latest navigator made by react). Props and etc we do no need to learn yet because that required a deep understanding of navigation
+13 - You may refer image of learn-until-here.png for better observation (from point 12)
+
+
+13 - your stacknavigatorroot must able to navigate screenone and screentwo
+
+
+14 - your screenone must look like screenone.png, same goes to screentwo look like screentwo.png as well
+
+
+15 - when you doing navigation, do chatgpt with this extra tips on how to use this .............. "const navigation: any = useNavigation();"
+
+
+GOODLUCK AIMAN!
