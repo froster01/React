@@ -1,0 +1,51 @@
+PLEASE READ THIS FILE UNTIL FINISH BEFORE YOU START WORKING ON FROM POINT 1.
+
+WELCOME TO TASK 3: SIMPLE DRAWER MENU COMPONENT
+
+OBJECTIVES:
+- Implement a basic drawer navigation
+- DrawerMenu component
+- Add multiple screens and navigate using the drawer menu
+
+TASKS:
+1. Setup Drawer Navigation:
+
+    Install the necessary packages for drawer navigation:
+        - npm install @react-navigation/drawer
+        - npm install react-native-gesture-handler react-native-reanimated
+
+    Follow the setup instructions for react-native-reanimated if needed
+
+    If module above triggered any error while installing, please read the official documentation react native on this link, https://reactnavigation.org/docs/drawer-navigator/
+
+    Do let me know if your DrawerMenu needs props
+
+
+2. Create Drawer Navigator Component:
+
+    Inside src folder, create a new folder 'component'
+    Name it as DrawerMenu.tsx
+    Include the UI or Text Age and Address
+
+
+3. Create Additional Screens:
+
+    In the screens folder, create two new screens: Age.tsx and Address.tsx
+    Add basic content to these screens to display their names
+
+
+4. Configure Drawer Navigator:
+
+    Ensure that the drawer menu can be opened and closed and that navigation between all screens works correctly
+
+
+5. Integrate Drawer Navigator with Stack Navigator:
+
+    In StackNavigatorRoot.tsx, add the DrawerNavigator as a screen in the stack navigator. You can refer to my example how i add DrawerRoot function in navigators.png
+
+
+
+CHALLENGES AHEAD - You need to research how to create your own component DrawerMenu and use it inside DrawerRoot function
+
+
+GOODLUCK AIMAN!
