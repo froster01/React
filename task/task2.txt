@@ -4,11 +4,6 @@ PLEASE READ THIS FILE UNTIL FINISH BEFORE YOU START WORKING ON FROM POINT 1.
 
 
 
-
-
-
-
-
 1 - create a screen AND navigator folder inside src folder
 2 - make sure each function that you write, it needs to be a camelCase except for parent function (eg parent function; const App() ..... const ScreenOne() ..... ) 
 
@@ -17,7 +12,7 @@ PLEASE READ THIS FILE UNTIL FINISH BEFORE YOU START WORKING ON FROM POINT 1.
 4 - make sure the folder name is written as small-case letter, but if your folder contain two words (eg; imageapi), then it needs to be a camelCase as well
 
 
-5 - after you create a new file, you need to create an empty hamburger inside screenone and screentwo
+5 - after you create a new file, you need to create an empty boilerplate inside screenone and screentwo
 6 - create a new file of homepage and aboutme in screen folder. create a new file stacknavigatorroot in navigator folder. Filename is .tsx
 
 
