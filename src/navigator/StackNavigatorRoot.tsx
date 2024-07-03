@@ -1,31 +1,37 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import AboutMe from '../screen/AboutMe';
 import HomePage from '../screen/HomePage';
 import Myself from '../screen/Myself';
+import DrawerMenu from '../component/DrawerMenu';
+import Address from '../screen/Address';
+import Age from '../screen/Age';
 
 const Stack = createStackNavigator();
-const NavStack = () => {
-  // apps Routes.
-  return (
-    <Stack.Navigator initialRouteName="HomePage">
-      <Stack.Screen
-        name="Screen1" // If you name this as your ScreenOne please change component to ScreenOne as well to prevent future confusion. If you prefer HomePage, then use HomePage instead.
-        component={HomePage} // change
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="Screen2" // Please change to ScreenTwo
-        component={AboutMe} // change
-        options={{headerShown: true}}
-      />
-      <Stack.Screen
-        name="Screen3" // Please change to ScreenThree
-        component={Myself} // change
-        options={{headerShown: true}}
-      />
-    </Stack.Navigator>
-  );
+const Drawer = createDrawerNavigator();
+
+const DrawerRoot = () => {
+    return (
+    <Drawer.Navigator
+        initialRouteName="HomePage"
+        drawerContent={(props) => <DrawerMenu {...props} />}
+        screenOptions={{ headerShown: true, drawerStyle: { width: 300 } }}
+    >
+        <Drawer.Screen name="HomePage" component={HomePage} />
+        <Drawer.Screen name="AboutMe" component={AboutMe} />
+        <Drawer.Screen name="Myself" component={Myself} />
+        <Drawer.Screen name="Age" component={Age} />
+        <Drawer.Screen name="Address" component={Address} />
+    </Drawer.Navigator>
+    );
 };
 
-export default NavStack;
+    const StackNavigatorRoot = () => {
+    return (
+    <Stack.Navigator initialRouteName="DrawerRoot">
+        <Stack.Screen name="DrawerRoot" component={DrawerRoot} options={{ headerShown: false }} />
+    </Stack.Navigator>
+    );
+};
+export default StackNavigatorRoot;

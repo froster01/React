@@ -6,7 +6,7 @@ const HomePage = () => {
   const navigation: any = useNavigation();
   return (
     <View style={styles.container}>
-      <Button title="Click me" onPress={() => navigation.navigate('Screen2')} />
+      <Button title="Click me" onPress={() => navigation.navigate('AboutMe')} />
       <Text style={styles.text}>HomePage</Text>
     </View>
   );

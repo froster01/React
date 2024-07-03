@@ -3,14 +3,14 @@ import {useNavigation} from '@react-navigation/native';
 
 // Please change this parent function and filename to ScreenTwo
 const AboutMe = () => {
-  const navigation: any = useNavigation();
+  // const navigation: any = useNavigation();
 
   return (
     <View style={styles.container}>
-      <Button
+      {/* <Button
         title="Portfolio"
-        onPress={() => navigation.navigate('Screen3')} // Please help to explain this.. why i should put never?
-      />
+        onPress={() => navigation.navigate('Myself')} // Please help to explain this.. why i should put never?
+      /> */}
       <Text style={styles.text}> AboutMe </Text>
     </View>
   );
